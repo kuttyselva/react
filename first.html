@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="first.css">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+    <title></title>
+  </head>
+  <body>
+<div id="app">
+  <script type="text/babel">
+    class Pet extends React.Component {
+      render() {
+        const li={fontSize: '1.5em'};
+        return(
+        <div class="card">
+        <h2 class="name">Moxie</h2>
+        <img src="https://pbs.twimg.com/profile_images/1057899591708753921/PSpUS-Hp_400x400.jpg" alt="moxie"/>
+        <h3 style={li}>helloo</h3>
+      
+
+        </div>
+
+
+      );
+        // const h2= ReactDOMFactories.h2(null, "Moxie");
+        // const img=ReactDOMFactories.img({
+        //   src:"https://pbs.twimg.com/profile_images/1057899591708753921/PSpUS-Hp_400x400.jpg",
+        //   alt: "moxie"
+        // });
+        // return ReactDOMFactories.div(null,h2,img);
+
+      }
+    }
+    class Box extends React.Component {
+      render() {
+          const fontSize=Math.floor(Math.random()*80)+20;
+          const backgroundColor=['red','green','blue','black'][Math.floor(Math.random()*4)];
+          return(
+<div style={{
+  fontSize: `${fontSize}px`,
+  backgroundColor,color: 'white',height: '200px',width:'500px',
+}}>
+  Random box
+</div>
+);
+        }
+      }
+
+     ReactDOM.render(<Pet/>,document.getElementById("app"));
+    //  ReactDOM.render(<Box/>,document.getElementById("app"));
+  </script>
+</div>
+  </body>
+</html>
