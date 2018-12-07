@@ -10,7 +10,7 @@ return(
   <div class="card-body">
     <h3 class="card-title">Recipe {title}</h3>
     <h5 class="card-text">
-      ingredients  </h5>
+      ingredients</h5>
 
               <ul>{ing}</ul>
 
