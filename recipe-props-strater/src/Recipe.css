@@ -58,7 +58,17 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
+.recipe{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width:580px) {
+  .recipe{
+    display: block;
+  }
 
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -4412,7 +4422,10 @@ input[type="button"].btn-block {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
-  margin-top: 30px;
+
+}
+.mar{
+  margin-bottom: 50px;
 }
 
 .card > hr {
@@ -4438,6 +4451,10 @@ input[type="button"].btn-block {
 
 .card-title {
   margin-bottom: 0.75rem;
+   float: none;
+  margin-left: 15%;
+     margin-right: auto;
+
 }
 
 .card-subtitle {

@@ -5,10 +5,11 @@ render(){
   const {title,img,instructions}= this.props;
     const ing=this.props.ingredients.map((ing,index) =>(<li key={index}> {ing} </li>));
 return(
-  <div class="card" style={{width: `${18}rem`}}>
+<div style={{padding:'10px'}}>
+  <div class="card" style={{width: `${10}rem`}}>
   <img class="card-img-top" src={img} alt="Card"></img>
   <div class="card-body">
-    <h3 class="card-title">Recipe {title}</h3>
+    <h5 class="card-title">Recipe {title}</h5>
     <h5 class="card-text">
       ingredients</h5>
 
@@ -21,6 +22,7 @@ return(
   </div>
 </div>
 
+</div>
 
 );
 
