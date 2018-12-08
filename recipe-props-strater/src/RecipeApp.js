@@ -11,9 +11,9 @@ class RecipeApp extends Component {
     return (
 
       <div className="App" >
-
           <Navb/>
         <List />
+
         </div>
     );
   }

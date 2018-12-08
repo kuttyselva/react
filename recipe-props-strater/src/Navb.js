@@ -20,7 +20,7 @@ export default class Navb extends Component{
           return (
               <div>
                 <div class="mar">
-                  <Navbar color="light" light fixed="top" class="mar">
+                  <Navbar color="dark" dark fixed="top" expand="md" class="mar">
                       <NavbarBrand href="/"><h4>Table Top</h4></NavbarBrand>
                       <NavbarToggler onClick={this.toggle} />
                       <Collapse isOpen={this.state.isOpen} navbar>
