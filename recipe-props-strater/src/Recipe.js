@@ -10,7 +10,7 @@ return(
   <div class="card" style={{width: `${12}rem`}}>
   <img class="card-img-top" src={img} alt="Card"></img>
   <div class="card-body">
-    <h5 class="card-title">Recipz {title}</h5>
+    <h5 class="card-title">Recipse {title}</h5>
     <h5 class="card-text">
       ingredients</h5>
 
