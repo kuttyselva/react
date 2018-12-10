@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-
 import './App.css';
-const nobx= 32;
+const nobx= 8;
 const Box= ({color}) =>{
   const style={
     width:'180px',
@@ -25,6 +24,10 @@ constructor(props){
     this.setState({boxes});
   },300);
 }
+// constructor(props){
+//   super(props);
+//   this.state={ name:"kutty"};
+// }
   getRandomcol(){
     let ci=Math.floor(Math.random()*this.props.allcol.length);
     return this.props.allcol[ci];
@@ -34,6 +37,8 @@ constructor(props){
     return (
       <div>
         {boxes}
+        {/* <p>{this.state.name}</p>
+        <button type="button" onClick={()=>this.setState({name:"KUTTY"})}>upper</button> */}
       </div>
     );
   }
